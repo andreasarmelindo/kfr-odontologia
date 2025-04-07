@@ -2,16 +2,17 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KFR Odontologia</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="navbar">
     <div class="container">
-      <h1>KFR Odontologia</h1>
+      <h1 class="logo">KFR Odontologia</h1>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#tratamentos">Tratamentos</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -21,33 +22,44 @@
   </header>
 
   <section class="hero">
-    <h2>Sorrisos transformadores</h2>
-    <p>Cuidados odontológicos com excelência</p>
+    <div class="hero-text">
+      <h2>Sorrisos saudáveis começam aqui</h2>
+      <p>Excelência em atendimento odontológico</p>
+    </div>
   </section>
 
   <section id="sobre" class="section">
-    <h2>Sobre Nós</h2>
-    <p>Equipe especializada em proporcionar o melhor atendimento para sua saúde bucal.</p>
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma clínica odontológica moderna, oferecendo atendimento humano e tecnologia de ponta para transformar o seu sorriso.</p>
+    </div>
   </section>
 
-  <section id="tratamentos" class="section">
-    <h2>Tratamentos</h2>
-    <ul class="cards">
-      <li>🦷 Clareamento</li>
-      <li>🪥 Ortodontia</li>
-      <li>🧩 Implantes</li>
-      <li>🦷 Prótese</li>
-    </ul>
+  <section id="tratamentos" class="section alt">
+    <div class="container">
+      <h2>Nossos Tratamentos</h2>
+      <div class="cards">
+        <div class="card">🦷 Clareamento Dental</div>
+        <div class="card">🪥 Ortodontia Estética</div>
+        <div class="card">🧩 Implantes Dentários</div>
+        <div class="card">👶 Odontopediatria</div>
+      </div>
+    </div>
   </section>
 
   <section id="contato" class="section">
-    <h2>Contato</h2>
-    <p>📍 Av. Exemplo, 123</p>
-    <p>📱 <a href="https://wa.me/5511999999999" target="_blank">Agende pelo WhatsApp</a></p>
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p><strong>Endereço:</strong> Av. Exemplo, 123 - São Paulo, SP</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511999999999" target="_blank">Clique para agendar</a></p>
+      <p><strong>Email:</strong> contato@kfrodontologia.com</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 KFR Odontologia</p>
+    <div class="container">
+      <p>&copy; 2025 KFR Odontologia. Todos os direitos reservados.</p>
+    </div>
   </footer>
 </body>
 </html>
