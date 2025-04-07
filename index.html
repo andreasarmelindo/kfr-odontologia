@@ -1,44 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KFR Odontologia</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-  <script>
-  function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("show");
-  }
-</script>
 <body>
-  <header class="navbar">
+  <header class="topbar">
     <div class="container">
-      <a href="index.html" class="logo">KFR Odontologia</a>
-      <nav>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-<ul class="nav-links" id="nav-links">
-  <li><a href="index.html">Início</a></li>
-  <li><a href="sobre.html">Sobre</a></li>
-  <li><a href="tratamentos.html">Tratamentos</a></li>
-  <li><a href="contato.html">Contato</a></li>
-</ul>
+      <div class="logo">
+        <img src="img/logo-kfr.png" alt="Logo KFR Odontologia">
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">A Clínica</a></li>
+          <li><a href="tratamentos.html">Tratamentos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="hero-text">
-      <h1>Sorrisos que transformam</h1>
-      <p>Clínica moderna e atendimento humano para você sorrir com confiança.</p>
-      <a href="contato.html" class="cta-button">Agendar agora</a>
+    <div class="container">
+      <h1>Sorrir é viver bem!</h1>
+      <p>Excelência em odontologia com atendimento humanizado em Campo Grande - MS.</p>
+      <a href="contato.html" class="btn">Agende sua avaliação</a>
     </div>
   </section>
 
-  <footer>
+  <section class="destaques">
     <div class="container">
-      <p>&copy; 2025 KFR Odontologia. Todos os direitos reservados.</p>
+      <h2>Tratamentos Personalizados</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="img/tratamento1.jpg" alt="Tratamento 1">
+          <h3>Ortodontia</h3>
+        </div>
+        <div class="card">
+          <img src="img/tratamento2.jpg" alt="Tratamento 2">
+          <h3>Implantes</h3>
+        </div>
+        <div class="card">
+          <img src="img/tratamento3.jpg" alt="Tratamento 3">
+          <h3>Clareamento</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 KFR Odontologia - Todos os direitos reservados.</p>
     </div>
   </footer>
 </body>
