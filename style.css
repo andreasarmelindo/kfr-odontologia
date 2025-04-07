@@ -7,9 +7,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #111;
+  background-color: #1a1a1a;
   padding: 20px 0;
   color: white;
   position: sticky;
@@ -28,19 +28,20 @@ body {
   z-index: 10;
 }
 
-.navbar .logo {
+.logo {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  justify-content: flex-end;
 }
 
-.nav-links a {
+.nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -54,57 +55,41 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('https://images.unsplash.com/photo-1588776814546-ec7d8e3f176d') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1588776814546-ec7d8e3f176d') center/cover no-repeat;
   color: white;
-  padding: 100px 0;
+  padding: 120px 20px;
   text-align: center;
 }
 
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
-/* Sections */
-.section {
-  padding: 60px 0;
+.cta-button {
+  background-color: #00b894;
+  padding: 12px 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.section.alt {
-  background-color: #eaeaea;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 18px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.cta-button:hover {
+  background-color: #019874;
 }
 
 /* Footer */
 footer {
-  background-color: #111;
+  background-color: #1a1a1a;
   color: white;
-  text-align: center;
   padding: 30px 0;
+  text-align: center;
   margin-top: 60px;
 }
